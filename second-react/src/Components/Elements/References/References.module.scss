@@ -1,0 +1,43 @@
+@import "../../../@mixins";
+.forSpace{
+  width: 33.3%;
+  height: 220px;
+  @include flex-center;
+
+  .reference{
+    width: 98.5%;
+    height: 95.5%;
+    @include flex-center;
+    border-radius: 4rem;
+    background-color: #DCEEFF;
+    transition: .33s;
+    cursor: pointer;
+
+    &__cont{
+      width: 80%;
+      height: 70%;
+      @include flex-between;
+      align-items: start;
+
+      p{
+        width: 70%;
+        font-size: 2rem;
+
+      }
+      .image{
+        width: 20%;
+        height: 100%;
+        @include flex-center;
+        align-items: end;
+
+        img{
+          width: 100%;
+        }
+      }
+    }
+    &:hover{
+      scale: 1.01;
+      box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.card {
+  height: 42%;
+  background-color: #2596FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4rem;
+  transition: 0.33s;
+}
+.card h2 {
+  width: 50%;
+  color: white;
+  font-size: 3rem;
+}
+.card p {
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+  scale: 1.01;
+}
+.card_block {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.card_block__top {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+}
+.card_block__bottom {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.card_block__bottom h1 {
+  width: 100%;
+  font-size: 10rem;
+  color: #80C2FF;
+  border-bottom: 1px solid #80C2FF;
+}
+.card_block__bottom .block {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card_block__bottom .block h2 {
+  width: max-content;
+}
+
+/*# sourceMappingURL=S2Card.module.css.map */

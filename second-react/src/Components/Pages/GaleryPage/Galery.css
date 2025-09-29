@@ -1,0 +1,106 @@
+.sectionBlockName {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+}
+.sectionBlockName .left_blocked {
+  width: 40%;
+  height: 100%;
+  border-radius: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #DCF0FF;
+}
+.sectionBlockName .left_blocked__space {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: start;
+  justify-content: start;
+}
+.sectionBlockName .left_blocked__space h1 {
+  font-size: 4rem;
+}
+.sectionBlockName .right_blocked {
+  background-color: #DCF0FF;
+  width: 59.5%;
+  height: 80%;
+  border-radius: 4rem;
+}
+
+.gridGallery {
+  width: 90%;
+  height: 1800px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 0.5%;
+  grid-template-areas: "items1 items2 items2 items3" "items1 items5 items6 items6" "items4 items5 items6 items6" "items4 items5 items8 items8" "items7 items7 items8 items8" "items9 items10 items8 items8" "items9 items10 items12 items13" "items9 items11 items12 items13";
+}
+.gridGallery .items {
+  width: 100%;
+  height: 100%;
+  border-radius: 4rem;
+}
+.gridGallery .items img {
+  width: 100%;
+  height: 100%;
+}
+.gridGallery .items1 {
+  grid-area: items1;
+}
+.gridGallery .items2 {
+  grid-area: items2;
+}
+.gridGallery .items3 {
+  grid-area: items3;
+}
+.gridGallery .items4 {
+  grid-area: items4;
+}
+.gridGallery .items5 {
+  grid-area: items5;
+}
+.gridGallery .items6 {
+  grid-area: items6;
+}
+.gridGallery .items7 {
+  grid-area: items7;
+}
+.gridGallery .items8 {
+  grid-area: items8;
+}
+.gridGallery .items9 {
+  grid-area: items9;
+}
+.gridGallery .items10 {
+  grid-area: items10;
+}
+.gridGallery .items11 {
+  grid-area: items11;
+}
+.gridGallery .items12 {
+  grid-area: items12;
+}
+.gridGallery .items13 {
+  grid-area: items13;
+}
+
+.loadMore {
+  width: 30%;
+  height: 70px;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  background-color: #0089ED;
+  font-size: 2rem;
+  color: white;
+}
+
+/*# sourceMappingURL=Galery.css.map */

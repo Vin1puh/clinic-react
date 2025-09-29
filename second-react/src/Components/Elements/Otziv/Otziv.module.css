@@ -1,0 +1,53 @@
+.Otziv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Otziv_card {
+  width: 99.5%;
+  height: 99.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4rem;
+  background-color: #DCEEFF;
+}
+.Otziv_card__cont {
+  width: 85%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+}
+.Otziv_card__cont h3 {
+  font-size: 3rem;
+}
+.Otziv_card__cont .stars {
+  width: 150px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Otziv_card__cont .stars img {
+  height: 100%;
+}
+.Otziv_card__cont p {
+  font-size: 2rem;
+}
+.Otziv_card__cont .data {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: end;
+}
+.Otziv_card__cont .data span {
+  font-size: 1.6rem;
+}
+
+/*# sourceMappingURL=Otziv.module.css.map */

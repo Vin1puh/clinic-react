@@ -1,0 +1,86 @@
+.bottom {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.bottom .block {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom .card1 {
+  width: 39%;
+  background-color: #0070C1;
+  cursor: pointer;
+  height: 14%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4rem;
+  transition: 0.33s;
+}
+.bottom .card1:hover {
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+  scale: 1.01;
+}
+.bottom .card1 .button_cont {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.bottom .card1 .button_cont h1 {
+  font-size: 3rem;
+  color: white;
+}
+.bottom .card1 .button_cont button {
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  color: #636363;
+  font-size: 2rem;
+  transition: 0.33s;
+}
+.bottom .card1 .button_cont button:hover {
+  scale: 1.05;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+.bottom .card2 {
+  width: 60%;
+  background-color: #DCEEFF;
+  cursor: pointer;
+  height: 14%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4rem;
+  transition: 0.33s;
+}
+.bottom .card2:hover {
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+  scale: 1.01;
+}
+.bottom .card2 .cont {
+  width: 40%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: end;
+}
+.bottom .card2 .cont p {
+  width: 60%;
+  height: 100%;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=CourseCard.module.css.map */

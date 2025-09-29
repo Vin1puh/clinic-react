@@ -1,0 +1,47 @@
+.forSpace {
+  width: 33.3%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.forSpace .reference {
+  width: 98.5%;
+  height: 95.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4rem;
+  background-color: #DCEEFF;
+  transition: 0.33s;
+  cursor: pointer;
+}
+.forSpace .reference__cont {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+}
+.forSpace .reference__cont p {
+  width: 70%;
+  font-size: 2rem;
+}
+.forSpace .reference__cont .image {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: end;
+}
+.forSpace .reference__cont .image img {
+  width: 100%;
+}
+.forSpace .reference:hover {
+  scale: 1.01;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+/*# sourceMappingURL=References.module.css.map */

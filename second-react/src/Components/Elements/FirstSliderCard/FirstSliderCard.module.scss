@@ -1,0 +1,33 @@
+@import "../../../@mixins";
+
+.slider_card{
+  height: 100%;
+  @include flex-between-column;
+
+  img{
+    width: 100%;
+  }
+  h2{
+    width: 85%;
+    font-size: 3rem;
+  }
+  p{
+    width: 85%;
+    font-size: 2rem;
+  }
+  .data_block{
+    width: 85%;
+    height: 50px;
+    @include flex-between;
+
+    span{
+      font-size: 2rem;
+      color: #7D7D7D;
+    }
+    h3{
+      font-size: 2rem;
+      color: #0089ED;
+      cursor: pointer;
+    }
+  }
+}

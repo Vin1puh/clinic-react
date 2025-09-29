@@ -1,0 +1,81 @@
+@import "../../../@mixins";
+.sectionBlockName{
+  width: 100%;
+  height: 300px;
+  @include flex-between;
+  align-items: start;
+
+  .left_blocked{
+    width: 40%;
+    height: 100%;
+    border-radius: 4rem;
+    @include flex-center;
+    background-color: #DCF0FF;
+
+    &__space{
+      width: 80%;
+      height: 80%;
+      @include flex-center;
+      align-items: start;
+      justify-content: start;
+
+      h1{
+        font-size: 4rem;
+      }
+    }
+  }
+  .right_blocked{
+    background-color: #DCF0FF;
+    width: 59.5%;
+    height: 80%;
+    border-radius: 4rem;
+  }
+}
+.gridGallery{
+  width: 90%;
+  height: 1800px;
+  @include grid(8, 4, 0.5%);
+  grid-template-areas:
+        "items1 items2 items2 items3"
+        "items1 items5 items6 items6"
+        "items4 items5 items6 items6"
+        "items4 items5 items8 items8"
+        "items7 items7 items8 items8"
+        "items9 items10 items8 items8"
+        "items9 items10 items12 items13"
+        "items9 items11 items12 items13";
+
+  .items{
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem;
+
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .items1{grid-area: items1;}
+  .items2{grid-area: items2;}
+  .items3{grid-area: items3;}
+  .items4{grid-area: items4;}
+  .items5{grid-area: items5;}
+  .items6{grid-area: items6;}
+  .items7{grid-area: items7;}
+  .items8{grid-area: items8;}
+  .items9{grid-area: items9;}
+  .items10{grid-area: items10;}
+  .items11{grid-area: items11;}
+  .items12{grid-area: items12;}
+  .items13{grid-area: items13;}
+}
+.loadMore{
+  width: 30%;
+  height: 70px;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  background-color: #0089ED;
+  font-size: 2rem;
+  color: white;
+}

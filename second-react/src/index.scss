@@ -1,0 +1,348 @@
+@import '@mixins.scss';
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 9px;
+    overflow-x: hidden;
+    font-family: "Mulish", sans-serif;
+}
+header{
+    width: 200px;
+    height: 95%;
+    @include flex-between-column;
+    @include position_fix;
+    top: 10px;
+    left: 50px;
+
+    h2{
+        font-size: 2rem;
+        text-align: center;
+        color: #0194E6;
+    }
+    nav{
+        width: 100%;
+        height: 50%;
+        @include flex-center;
+        border-top: 1px solid #80C2FF;
+        border-bottom: 1px solid #80C2FF;
+        
+        .nav_menu{
+            border-left: 1px solid #80C2FF;
+            width: 100%;
+            height: 90%;
+            @include flex-between-column;
+
+            a{
+                width: 70%;
+                height: 6%;
+                text-align: start;
+                font-size: 2rem;
+                text-decoration: none;
+                color: #000000;
+
+                &:hover{
+                    border-bottom: 2px solid #0194E6;
+                }
+            }
+            .active{
+                border-bottom: 2px solid #0194E6;
+            }
+        }
+    }
+    h1{
+        font-size: 2.5rem;
+        color: #636363;
+    }
+    button{
+        width: 100%;
+        height: 60px;
+        border-radius: 2rem;
+        background-color: #0194E6;
+        color: white;
+        border: none;
+        font-size: 1.8rem;
+    }
+    .messenger-block{
+        width: 100%;
+        height: 60px;
+        @include flex-between;
+        border-bottom: 1px solid #0194E6;
+
+        img{
+            height: 80%;
+            border-radius: 2rem;
+            transition: .33s;
+
+            &:hover{
+                box-shadow: 1px 1px 10px rgb(0, 0, 0);
+            }
+        }
+    }
+}
+button{
+    transition: .33s;
+
+    &:hover{
+        scale: 1.05;
+        box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+}
+main{
+    position: relative;
+    top: 10px;
+    left: 16%;
+    width: 80%;
+    @include flex-between-column;
+    height: max-content;
+}
+.space{
+    height: 100px;
+    width: 100%;
+}
+footer {
+    position: sticky;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    align-items: end;
+    background-color: #DCF0FF;
+
+    .footer_cont{
+        position: relative;
+        left: 16%;
+        width: 80%;
+        height: 90%;
+        @include flex-between;
+
+        .left{
+            width: 25%;
+            height: 100%;
+            @include flex-between-column;
+
+            h2{
+                font-size: 3rem;
+                width: 80%;
+                height: 25%;
+            }
+            p{
+                width: 80%;
+                font-size: 2rem;
+            }
+            .info_cont{
+                width: 100%;
+                height: 50%;
+                border-top-left-radius: 4rem;
+                border-top-right-radius: 4rem;
+                background-color: #0194E6;
+                @include flex-center;
+
+                .info{
+                    width: 80%;
+                    height: 90%;
+                    @include flex-between-column;
+                    align-items: start;
+
+                    h2{
+                        font-size: 3rem;
+                        color: white;
+                        width: 90%;
+                        height: auto;
+                    }
+                    .line{
+                        width: 100%;
+                        height: 1px;
+                        background-color: #80C2FF;
+                    }
+                    p{
+                        font-size: 2rem;
+                        color: white;
+                    }
+                    span{
+                        font-size: 1.5rem;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .right{
+            width: 74%;
+            height: 100%;
+            @include flex-between-column;
+
+            .forms{
+                width: 100%;
+                height: 25%;
+                @include flex-between;
+
+                &__left{
+                    width: 45%;
+                    height: 100%;
+                    @include flex-between-column;
+
+                    input{
+                        width: 100%;
+                        height: 20%;
+                        border: none;
+                        outline: none;
+                        background: transparent;
+                        border-bottom: 1px solid #80C2FF;
+                        font-size: 1.8rem;
+
+                        &::placeholder{
+                            color: black;
+                        }
+                    }
+                }
+                &__right{
+                    width: 50%;
+                    height: 100%;
+                    @include flex-center;
+
+                    textarea{
+                        border-radius: 1rem;
+                        width: 100%;
+                        height: 100%;
+                        padding-left: 1rem;
+                        font-size: 1.8rem;
+                        outline: none;
+                        border: 1px solid #80C2FF;
+
+                        &::placeholder{
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .question{
+                width: 100%;
+                height: 7%;
+                @include flex-between;
+
+                &__block{
+                    width: 45%;
+                    height: 100%;
+                    @include flex-between;
+
+                    p{
+                        font-size: 2rem;
+                        padding-left: 1rem;
+                    }
+                    input{
+                        width: 7%;
+                        height: 100%;
+                    }
+                }
+                button{
+                    width: 50%;
+                    height: 100%;
+                    border: none;
+                    border-radius: 2rem;
+                    background-color: #0194E6;
+                    color: white;
+                    font-size: 2rem;
+                }
+            }
+            .bottom{
+                width: 100%;
+                height: 50%;
+                @include flex-between-column;
+
+                .main_footer{
+                    width: 100%;
+                    height: 75%;
+                    background-color: #003C67;
+                    border-radius: 4rem;
+                    @include flex-center;
+
+                    &_cont{
+                        width: 90%;
+                        height: 85%;
+                        @include flex-between-column;
+
+                        .content_top{
+                            width: 100%;
+                            height: 15%;
+                            @include flex-between;
+
+                            h2{
+                                font-size: 2.5rem;
+                                color: white;
+                            }
+                            p{
+                                font-size: 2rem;
+                                color: white;
+                            }
+                            .images{
+                                width: 20%;
+                                height: 80%;
+                                @include flex-between;
+
+                                img{
+                                    cursor: pointer;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .line{
+                            width: 100%;
+                            height: 1px;
+                            background-color: #80C2FF;
+                        }
+                        .content_bottom{
+                            width: 100%;
+                            height: 65%;
+                            @include flex-between;
+                            align-items: start;
+
+
+                            .text_cont{
+                                width: 20%;
+                                height: 80%;
+                                @include flex-between-column;
+                                align-items: start;
+
+                                &:last-child{
+                                    height: 45%;
+                                }
+                                p{
+                                    font-size: 2rem;
+                                    color: white;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+                &__line_block{
+                    position: relative;
+                    left: 4%;
+                    width: 108%;
+                    height: 24%;
+                    background-color: #003C67;
+                    border-top-left-radius: 4rem;
+                    @include flex-center;
+
+                    &__content{
+                        width: 90%;
+                        height: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+
+                        &__block{
+                            width: 30%;
+                            @include flex-between;
+                        }
+                        p{
+                            font-size: 2rem;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

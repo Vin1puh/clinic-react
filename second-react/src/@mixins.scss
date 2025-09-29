@@ -1,0 +1,48 @@
+@mixin position_fix{
+    position: fixed;
+    z-index: 999;
+}
+@mixin flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin flex-around{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+@mixin flex-evenly{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@mixin flex-between-column{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+@mixin flex-around-column{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+@mixin flex-evenly-column{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin grid ($row, $col , $gap){
+    display: grid;
+    grid-template-columns: repeat($col, 1fr);
+    grid-template-rows: repeat($row, 1fr);
+    gap: $gap;
+}

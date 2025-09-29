@@ -1,0 +1,76 @@
+@import '../../../@mixins.scss';
+
+form{
+    @include flex-center;
+    width: 100%;
+    height: 70%;
+    background-color: #0194E6;
+    border-radius: 2rem;
+
+    .form_block{
+        @include flex-between-column;
+        align-items: start;
+        width: 85%;
+        height: 90%;
+
+        input{
+            width: 100%;
+            height: 30px;
+            border: none;
+            outline: none;
+            padding-left: 1rem;
+            color: #80C2FF;
+            border-bottom: 1px solid #80C2FF;
+            background-color: transparent;
+            font-size: 1.5rem;
+            transition: 0.33s;
+
+            &:hover{
+                color: white;
+                border-bottom: 1px solid white;
+            }
+            &::placeholder{
+                color: white;
+            }
+        }
+        h1{
+            font-size: 3rem;
+            color: white;
+        }
+        h2{
+            font-size: 2rem;
+            color: white;
+            font-weight: 400;
+            width: 70%;
+        }
+        p{
+            @include flex-between;
+            font-size: 1.5rem;
+            color: white;
+
+            input{
+                width: 40px;
+                margin: 1rem;
+                background-color: transparent;
+                border: none;
+            }
+        }
+        button{
+            width: 100%;
+            height: 55px;
+            border: none;
+            outline: none;
+            color: gray;
+            font-size: 2rem;
+            font-weight: 700;
+            background-color: white;
+            border-radius: 2rem;
+            transition: 0.33s;
+
+            &:hover{
+                scale: 1.05;
+                box-shadow: 1px 1px 10px rgb(0, 0, 0);
+            }
+        }
+    }
+}

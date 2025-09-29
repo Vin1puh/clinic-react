@@ -1,0 +1,36 @@
+.slider_card {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.slider_card img {
+  width: 100%;
+}
+.slider_card h2 {
+  width: 85%;
+  font-size: 3rem;
+}
+.slider_card p {
+  width: 85%;
+  font-size: 2rem;
+}
+.slider_card .data_block {
+  width: 85%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider_card .data_block span {
+  font-size: 2rem;
+  color: #7D7D7D;
+}
+.slider_card .data_block h3 {
+  font-size: 2rem;
+  color: #0089ED;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=FirstSliderCard.module.css.map */

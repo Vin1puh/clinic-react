@@ -1,0 +1,103 @@
+.OtzivHead {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.OtzivHead .left {
+  width: 40%;
+  height: 100%;
+  border-radius: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../../../assets/otzivHead1.png") no-repeat center center;
+  background-size: cover;
+}
+.OtzivHead .left__cont {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+}
+.OtzivHead .left__cont h1 {
+  font-size: 4rem;
+}
+.OtzivHead .right {
+  width: 59.5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4rem;
+  background: url("../../../assets/otzivHead2.png") no-repeat center center;
+  background-size: cover;
+}
+.OtzivHead .right__cont {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.OtzivHead .right__cont button {
+  width: 50%;
+}
+
+.sectionOfOtziv {
+  width: 100%;
+  height: 2000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 0.5%;
+  grid-template-areas: "itemss0 itemss1 itemss2" "itemss0 itemss3 itemss4" "itemss0 itemss6 itemss4" "itemss5 itemss6 itemss7" "itemss5 itemss9 itemss10" "itemss8 itemss9 itemss11";
+}
+
+.itemss0 {
+  grid-area: itemss0;
+}
+
+.itemss1 {
+  grid-area: itemss1;
+}
+
+.itemss2 {
+  grid-area: itemss2;
+}
+
+.itemss3 {
+  grid-area: itemss3;
+}
+
+.itemss4 {
+  grid-area: itemss4;
+}
+
+.itemss5 {
+  grid-area: itemss5;
+}
+
+.itemss6 {
+  grid-area: itemss6;
+}
+
+.itemss7 {
+  grid-area: itemss7;
+}
+
+.itemss8 {
+  grid-area: itemss8;
+}
+
+.itemss9 {
+  grid-area: itemss9;
+}
+
+.itemss10 {
+  grid-area: itemss10;
+}
+
+/*# sourceMappingURL=OtzivPage.css.map */

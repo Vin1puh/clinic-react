@@ -1,0 +1,79 @@
+@import "../../../@mixins";
+.sectionBlockName{
+  width: 100%;
+  height: 300px;
+  @include flex-between;
+  align-items: start;
+
+  .left_block{
+    width: 40%;
+    height: 100%;
+    border-radius: 4rem;
+    @include flex-center;
+    background: url("../../../assets/Infoname1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__space{
+      width: 80%;
+      height: 80%;
+      display: flex;
+      align-items: end;
+      justify-content: start;
+
+      h1{
+        font-size: 4rem;
+        width: 50%;
+      }
+    }
+  }
+  .right_block{
+    background: url("../../../assets/Infoname2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 59.5%;
+    height: 80%;
+    border-radius: 4rem;
+  }
+}
+.absolute_vodka2{
+  width: 100vw;
+  z-index: -1;
+  right: -6%;
+  bottom: 16%;
+  position: absolute;
+  height: 800px;
+  background-color: #DCEEFF;
+}
+.sectionFor{
+  width: 100%;
+  height: max-content;
+  @include flex-between-column;
+
+  .top{
+    width: 90%;
+    height: 100px;
+    @include flex-center;
+    justify-content: start;
+
+    h1{
+      font-size: 4rem;
+      width: 50%;
+
+      p{
+        font-size: 2rem;
+        font-weight: 400;
+      }
+    }
+  }
+  .blanks{
+    width: 100%;
+    height: max-content;
+    @include flex-between;
+    flex-wrap: wrap;
+
+    img{
+      width: 30%;
+    }
+  }
+}
