@@ -9,6 +9,7 @@ import Info from "./Components/Pages/InfoPage/Info.jsx";
 import Documents from "./Components/Pages/DocumentPage/Documents.jsx";
 import Galery from "./Components/Pages/GaleryPage/Galery.jsx";
 import OtzivPage from "./Components/Pages/OtzivPage/OtzivPage.jsx";
+import ClinicPage from "./Components/Pages/ClinicPage/ClinicPage.jsx";
 
 createRoot(document.getElementById('root')).render(
 
@@ -21,6 +22,7 @@ createRoot(document.getElementById('root')).render(
           <Route path='/documents' element={<Documents />}></Route>
           <Route path='/galery' element={<Galery />}></Route>
           <Route path='/otziv' element={<OtzivPage />}></Route>
+          <Route path='/clinic' element={<ClinicPage />}></Route>
       </Routes>
       <Footer />
   </BrowserRouter> 

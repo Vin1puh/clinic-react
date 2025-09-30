@@ -1,0 +1,171 @@
+@import '../../../@mixins';
+
+.topOfPage{
+  width: 100%;
+  height: 600px;
+  @include flex-between;
+
+  .left{
+    width: 35%;
+    height: 100%;
+    border-radius: 4rem;
+    @include flex-center;
+    background: {
+      image: url("../../../assets/suka.png");
+      size: cover;
+      repeat: no-repeat;
+    };
+
+    &__cont{
+      width: 80%;
+      height: 80%;
+      display: flex;
+      align-items: end;
+      justify-content: start;
+
+      h1{
+        font-size: 4rem;
+      }
+    }
+  }
+  .right{
+    width: 64.5%;
+    height: 100%;
+    @include flex-between-column;
+
+    .top{
+      width: 100%;
+      height: 45%;
+      border-radius: 4rem;
+      background: {
+        image: url("../../../assets/suka2.png");
+        size: cover;
+        repeat: no-repeat;
+      };
+    }
+    .bottom{
+      width: 80%;
+      height: 40%;
+      @include grid(3, 3, 1%);
+      grid-template-areas:
+        "iitem0 iitem1 iitem2"
+        "iitem3 iitem1 iitem5"
+        "iitem3 iitem4 iitem5";
+
+      .card{
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+        background-color: #DCEEFF;
+        @include flex-center;
+        transition: .33s;
+
+        &:hover{
+          background-color: #2596FF;
+        }
+        &__cont{
+          width: 80%;
+          height: 80%;
+          display: flex;
+          align-items: start;
+          justify-content: start;
+
+          p{
+            font-size: 1.8rem;
+          }
+        }
+      }
+      .iitem0 { grid-area: iitem0; }
+      .iitem1 { grid-area: iitem1; }
+      .iitem2 { grid-area: iitem2; }
+      .iitem3 { grid-area: iitem3; }
+      .iitem4 { grid-area: iitem4; }
+      .iitem5 { grid-area: iitem5; }
+    }
+  }
+}
+h2{
+  font-size: 3rem;
+}
+.headOf{
+  width: 100%;
+  height: 200px;
+  @include flex-between-column;
+  align-items: start;
+
+  .cards{
+    width: 100%;
+    height: 70%;
+    @include flex-between;
+
+    .card{
+      width: 20%;
+      height: 100%;
+      @include flex-center;
+      border-radius: 2rem;
+      border-left: 2px solid #80C2FF;
+      transition: .33s;
+
+      &:hover{
+        background-color: #DCEEFF;
+      }
+      &__cont{
+        width: 80%;
+        height: 90%;
+        @include flex-between-column;
+        align-items: start;
+
+        h3{
+          font-size: 3rem;
+          color: #0089ED;
+        }
+        p{
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
+.sectionText{
+  width: 100%;
+  height: max-content;
+  @include flex-between-column;
+  align-items: start;
+
+  .little_space{
+    height: 50px;
+  }
+  .grid{
+    width: 100%;
+    height: 700px;
+    @include grid(3, 2, 10%);
+
+    .forText{
+      width: 100%;
+      height: max-content;
+      @include flex-between-column;
+      align-items: start;
+
+      h3{
+        font-size: 2.5rem;
+        color: #0089ED;
+      }
+      p{
+        font-size: 2rem;
+
+        span{
+          color: #0089ED;
+        }
+      }
+      ul{
+        height: 100px;
+        @include flex-between-column;
+        align-items: start;
+        padding-left: 6rem;
+      }
+      li{
+        font-size: 2rem;
+      }
+    }
+  }
+}

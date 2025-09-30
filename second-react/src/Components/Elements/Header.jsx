@@ -20,7 +20,7 @@ export default function Header (){
                     <NavLink to='/otziv'>Отзывы   </NavLink>
                     <NavLink to='/galery'>Галерея    </NavLink>
                     <NavLink to='/documents'>Документы    </NavLink>
-                    <NavLink to='/asd'>Клиника    </NavLink>
+                    <NavLink to='/clinic'>Клиника    </NavLink>
                     <NavLink to='/asd'>Форум    </NavLink>
                     <NavLink to='/info'>Информация</NavLink>
                 </div>
