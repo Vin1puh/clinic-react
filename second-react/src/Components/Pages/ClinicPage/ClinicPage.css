@@ -1,0 +1,198 @@
+.topOfPage {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topOfPage .left {
+  width: 35%;
+  height: 100%;
+  border-radius: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../../assets/suka.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.topOfPage .left__cont {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+}
+.topOfPage .left__cont h1 {
+  font-size: 4rem;
+}
+.topOfPage .right {
+  width: 64.5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.topOfPage .right .top {
+  width: 100%;
+  height: 45%;
+  border-radius: 4rem;
+  background-image: url("../../../assets/suka2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.topOfPage .right .bottom {
+  width: 80%;
+  height: 40%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1%;
+  grid-template-areas: "iitem0 iitem1 iitem2" "iitem3 iitem1 iitem5" "iitem3 iitem4 iitem5";
+}
+.topOfPage .right .bottom .card {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  background-color: #DCEEFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.33s;
+}
+.topOfPage .right .bottom .card:hover {
+  background-color: #2596FF;
+}
+.topOfPage .right .bottom .card__cont {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.topOfPage .right .bottom .card__cont p {
+  font-size: 1.8rem;
+}
+.topOfPage .right .bottom .iitem0 {
+  grid-area: iitem0;
+}
+.topOfPage .right .bottom .iitem1 {
+  grid-area: iitem1;
+}
+.topOfPage .right .bottom .iitem2 {
+  grid-area: iitem2;
+}
+.topOfPage .right .bottom .iitem3 {
+  grid-area: iitem3;
+}
+.topOfPage .right .bottom .iitem4 {
+  grid-area: iitem4;
+}
+.topOfPage .right .bottom .iitem5 {
+  grid-area: iitem5;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.headOf {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+}
+.headOf .cards {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headOf .cards .card {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  border-left: 2px solid #80C2FF;
+  transition: 0.33s;
+}
+.headOf .cards .card:hover {
+  background-color: #DCEEFF;
+}
+.headOf .cards .card__cont {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+}
+.headOf .cards .card__cont h3 {
+  font-size: 3rem;
+  color: #0089ED;
+}
+.headOf .cards .card__cont p {
+  font-size: 1.8rem;
+}
+
+.sectionText {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+}
+.sectionText .little_space {
+  height: 50px;
+}
+.sectionText .grid {
+  width: 100%;
+  height: 700px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10%;
+}
+.sectionText .grid .forText {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+}
+.sectionText .grid .forText h3 {
+  font-size: 2.5rem;
+  color: #0089ED;
+}
+.sectionText .grid .forText p {
+  font-size: 2rem;
+}
+.sectionText .grid .forText p span {
+  color: #0089ED;
+}
+.sectionText .grid .forText ul {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 6rem;
+}
+.sectionText .grid .forText li {
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=ClinicPage.css.map */
