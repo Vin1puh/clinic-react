@@ -38,6 +38,7 @@
 
 .sectionFor {
   width: 100%;
+  height: -moz-max-content;
   height: max-content;
   display: flex;
   align-items: center;
@@ -58,10 +59,10 @@
 }
 .sectionFor .blanks {
   width: 100%;
+  height: -moz-max-content;
   height: max-content;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
+}/*# sourceMappingURL=Info.css.map */

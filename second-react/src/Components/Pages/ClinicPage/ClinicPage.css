@@ -145,6 +145,7 @@ h2 {
 
 .sectionText {
   width: 100%;
+  height: -moz-max-content;
   height: max-content;
   display: flex;
   align-items: center;
@@ -165,6 +166,7 @@ h2 {
 }
 .sectionText .grid .forText {
   width: 100%;
+  height: -moz-max-content;
   height: max-content;
   display: flex;
   align-items: center;
@@ -193,6 +195,4 @@ h2 {
 }
 .sectionText .grid .forText li {
   font-size: 2rem;
-}
-
-/*# sourceMappingURL=ClinicPage.css.map */
+}/*# sourceMappingURL=ClinicPage.css.map */

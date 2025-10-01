@@ -16,7 +16,7 @@ export default function Header (){
                     <NavLink to='/courses'>Курсы   </NavLink>
                     <NavLink to='/asd'>Специалисты   </NavLink>
                     <NavLink to='/asd'>Оборудование   </NavLink>
-                    <NavLink to='/asd'>Расписание</NavLink>
+                    <NavLink to='/courseOpened'>Расписание</NavLink>
                     <NavLink to='/otziv'>Отзывы   </NavLink>
                     <NavLink to='/galery'>Галерея    </NavLink>
                     <NavLink to='/documents'>Документы    </NavLink>
