@@ -32,9 +32,6 @@ form .form_block input:hover {
   color: white;
   border-bottom: 1px solid white;
 }
-form .form_block input::-moz-placeholder {
-  color: white;
-}
 form .form_block input::placeholder {
   color: white;
 }
@@ -76,4 +73,6 @@ form .form_block button {
 form .form_block button:hover {
   scale: 1.05;
   box-shadow: 1px 1px 10px rgb(0, 0, 0);
-}/*# sourceMappingURL=Form.module.css.map */
+}
+
+/*# sourceMappingURL=Form.module.css.map */

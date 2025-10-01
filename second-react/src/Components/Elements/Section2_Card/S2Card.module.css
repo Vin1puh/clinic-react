@@ -59,6 +59,7 @@
   justify-content: space-between;
 }
 .card_block__bottom .block h2 {
-  width: -moz-max-content;
   width: max-content;
-}/*# sourceMappingURL=S2Card.module.css.map */
+}
+
+/*# sourceMappingURL=S2Card.module.css.map */

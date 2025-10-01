@@ -106,7 +106,6 @@ main {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  height: -moz-max-content;
   height: max-content;
 }
 
@@ -219,9 +218,6 @@ footer .footer_cont .right .forms__left input {
   border-bottom: 1px solid #80C2FF;
   font-size: 1.8rem;
 }
-footer .footer_cont .right .forms__left input::-moz-placeholder {
-  color: black;
-}
 footer .footer_cont .right .forms__left input::placeholder {
   color: black;
 }
@@ -240,9 +236,6 @@ footer .footer_cont .right .forms__right textarea {
   font-size: 1.8rem;
   outline: none;
   border: 1px solid #80C2FF;
-}
-footer .footer_cont .right .forms__right textarea::-moz-placeholder {
-  color: black;
 }
 footer .footer_cont .right .forms__right textarea::placeholder {
   color: black;
@@ -386,4 +379,6 @@ footer .footer_cont .right .bottom__line_block__content__block {
 footer .footer_cont .right .bottom__line_block__content p {
   font-size: 2rem;
   color: white;
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
